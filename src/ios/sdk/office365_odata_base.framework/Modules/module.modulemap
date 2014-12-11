@@ -1,0 +1,6 @@
+framework module office365_odata_base {
+  umbrella header "office365_odata_base.h"
+
+  export *
+  module * { export * }
+}

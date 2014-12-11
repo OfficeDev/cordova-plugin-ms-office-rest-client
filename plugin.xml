@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+ Copyright (c) Microsoft Open Technologies, Inc.  All Rights Reserved. 
+ Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information.
+-->
+<plugin id="com.msopentech.o365.odata-engine" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Office365 OData Engine</name>
+    <description>Exposes Office365 OData protocol core api and Microsoft Azure Active Directory (ADAL) authentication</description>
+
+    <license>Apache 2.0</license>
+    <keywords>microsoft, office, azure, adal, odata</keywords>
+    <repo>https://github.com/msopentech/cordova-o365-odata-engine</repo>
+    <issue>https://github.com/msopentech/cordova-o365-odata-engine/issues</issue>
+
+    <dependency id="org.apache.cordova.inappbrowser"/>
+
+    <js-module name="O365Auth" src="www/O365Auth.js">
+        <runs />
+    </js-module>
+
+    <js-module name="utility" src="www/utility.js">
+        <runs />
+    </js-module>
+
+    <!-- TODO: Move another core functionality from outllok-services to odata-engine -->
+
+    <platform name="android">
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.INTERNET" /> 
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+        </config-file>
+
+        <lib-file src="src/android/lib/gson.jar" />
+        <lib-file src="src/android/lib/guava.jar" />
+        <lib-file src="src/android/lib/adal.jar" />
+        <lib-file src="src/android/lib/odata-engine-core-0.10.0.jar" />
+        <lib-file src="src/android/lib/odata-engine-android-impl-0.10.0.jar" />
+    </platform>
+
+    <platform name="ios">
+        <framework src="src/ios/sdk/office365_odata_base.framework" custom="true"/>
+    </platform>
+
+    <platform name="windows">
+    </platform>
+</plugin>
