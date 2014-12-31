@@ -5,7 +5,7 @@
 -->
 <plugin id="com.msopentech.o365.odata-engine" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Office365 OData Engine</name>
-    <description>Exposes Office365 OData protocol core api and Microsoft Azure Active Directory (ADAL) authentication</description>
+    <description>Provides base OData protocol client and Microsoft Azure Active Directory (ADAL) OAuth client.</description>
 
     <license>Apache 2.0</license>
     <keywords>microsoft, office, azure, adal, odata</keywords>
@@ -22,7 +22,7 @@
         <runs />
     </js-module>
 
-    <!-- TODO: Move another core functionality from outllok-services to odata-engine -->
+    <!-- TODO: Move other core functionality from service-specific clients to this shared core. -->
 
     <platform name="android">
         <config-file target="AndroidManifest.xml" parent="/manifest">
