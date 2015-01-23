@@ -1,4 +1,6 @@
-﻿var O365Auth;
+﻿// Copyright (c) Microsoft Open Technologies, Inc.  All rights reserved.  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information.
+
+var O365Auth;
 (function (O365Auth) {
     var Token = (function () {
         function Token(idToken, context, resourceId, clientId, redirectUri) {
