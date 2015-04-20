@@ -1,0 +1,7 @@
+repositories {
+    jcenter()
+}
+dependencies {
+    compile('com.microsoft.services:odata-engine-core:0.12.1') {}
+    compile('com.microsoft.services:odata-engine-android-impl:0.12.1@aar') {}
+}

@@ -493,5 +493,4 @@ var Microsoft;
     var Utility = Microsoft.Utility;
 })(Microsoft || (Microsoft = {}));
 //# sourceMappingURL=utility.js.map
-window.Microsoft = Microsoft;
 module.exports.extends = __extends;

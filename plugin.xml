@@ -12,11 +12,7 @@
     <repo>https://github.com/msopentech/cordova-o365-odata-engine</repo>
     <issue>https://github.com/msopentech/cordova-o365-odata-engine/issues</issue>
 
-    <dependency id="org.apache.cordova.inappbrowser"/>
-
-    <js-module name="O365Auth" src="www/O365Auth.js">
-        <runs />
-    </js-module>
+    <dependency id="com.microsoft.aad.adal" url="https://github.com/azuread/azure-activedirectory-library-for-cordova.git"/>
 
     <js-module name="utility" src="www/utility.js">
         <runs />
@@ -25,22 +21,10 @@
     <!-- TODO: Move other core functionality from service-specific clients to this shared core. -->
 
     <platform name="android">
-        <config-file target="AndroidManifest.xml" parent="/manifest">
-            <uses-permission android:name="android.permission.INTERNET" /> 
-            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
-        </config-file>
-
-        <lib-file src="src/android/lib/gson.jar" />
-        <lib-file src="src/android/lib/guava.jar" />
-        <lib-file src="src/android/lib/adal.jar" />
-        <lib-file src="src/android/lib/odata-engine-core-0.10.0.jar" />
-        <lib-file src="src/android/lib/odata-engine-android-impl-0.10.0.jar" />
+        <framework src="src/android/odata-engine.gradle" custom="true" type="gradleReference"/>
     </platform>
 
     <platform name="ios">
         <framework src="src/ios/sdk/office365_odata_base.framework" custom="true"/>
-    </platform>
-
-    <platform name="windows">
     </platform>
 </plugin>
