@@ -3,7 +3,7 @@
  Copyright (c) Microsoft Open Technologies, Inc.  All Rights Reserved. 
  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information.
 -->
-<plugin id="com.msopentech.o365.odata-engine" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="odata-engine" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Office365 OData Engine</name>
     <description>Provides base OData protocol client and Microsoft Azure Active Directory (ADAL) OAuth client.</description>
 
@@ -12,7 +12,7 @@
     <repo>https://github.com/msopentech/cordova-o365-odata-engine</repo>
     <issue>https://github.com/msopentech/cordova-o365-odata-engine/issues</issue>
 
-    <dependency id="com.microsoft.aad.adal" url="https://github.com/azuread/azure-activedirectory-library-for-cordova.git"/>
+    <dependency id="cordova-plugin-ms-adal" url="https://github.com/azuread/azure-activedirectory-library-for-cordova.git"/>
 
     <js-module name="utility" src="www/utility.js">
         <runs />
