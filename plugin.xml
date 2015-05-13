@@ -21,7 +21,11 @@
     <!-- TODO: Move other core functionality from service-specific clients to this shared core. -->
 
     <platform name="android">
-        <framework src="src/android/odata-engine.gradle" custom="true" type="gradleReference"/>
+        <lib-file src="src/android/lib/guava-18.0.jar" />
+        <lib-file src="src/android/lib/odata-engine-core-0.13.0.jar" />
+        <lib-file src="src/android/lib/odata-engine-android-impl-0.13.0.jar" />
+
+        <!-- <framework src="src/android/odata-engine.gradle" custom="true" type="gradleReference"/> -->
     </platform>
 
     <platform name="ios">
