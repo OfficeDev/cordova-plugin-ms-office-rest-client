@@ -1,0 +1,33 @@
+{
+  "name": "cordova-plugin-ms-office-rest-client",
+  "version": "0.2.0",
+  "description": "Apache Cordova plugin for Office 365 OData APIs",
+  "cordova": {
+    "id": "cordova-plugin-ms-office-rest-client",
+    "platforms": [
+      "android",
+      "ios",
+      "windows"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OfficeDev/cordova-plugin-ms-office-rest-client.git"
+  },
+  "keywords": [
+    "microsoft",
+    "office",
+    "outlook",
+    "mail",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-windows"
+  ],
+  "author": "MSOpenTech",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/OfficeDev/cordova-plugin-ms-office-rest-client/issues"
+  },
+  "homepage": "https://github.com/OfficeDev/cordova-plugin-ms-office-rest-client#readme"
+}
